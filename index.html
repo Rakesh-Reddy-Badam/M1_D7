@@ -2,61 +2,89 @@
 <html lang="en">
 <head>
     <title>Rakesh Enterprises</title>
+    <script src='index.js' rel='javascript'></script>
+    <style>
+        .body-styling{
+            background-color: ghostwhite;
+            text-align: center;
+        }
+        .table{
+            width: 100%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: large;
+        }
+        #table-heading{
+            background-color: gray;
+        }
+        .footer{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            font-size: large;
+            background-color: aquamarine;
+            color: blue;
+            text-align: center
+        }
+    </style>
 </head>
-<body style="text-align: center;">
+<body class="body-styling">
     <h1>Rakesh Novel Book Store</h1>
-    <table style="width: max-content;text-align: center;margin-left: auto;margin-right: auto;">
-        <tr>
-          <th>Product_image</th>
-          <th>Title</th>
-          <th>Description</th>
-          <th>Price</th>
-          <th>Link</th>
-        </tr>
-        <tr>
-            <td><img src="The_Best_is_yet to_Come_Novel.jpg" alt="Product_image" height=100 width=100></img></td>
-            <td>The_Best_is_yet to_Come_Novel</td>
-            <td>Description</td>
-            <td>£19.99</td>
-            <td><a href='URL'>https://www.amazon.co.uk/Best-Yet-Come-Katy-Colins</td>
-        </tr>
-        <tr>
-            <td><img src="The Secret Stealers_Novel.jpg" alt="Product_image" height=100 width=100></td>
-            <td>The Secret Stealers_Novel</td>
-            <td>description</td>
-            <td>£7.99</td>
-            <td><a href="URL">https://www.amazon.co.uk/Secret-Stealers-Novel-Jane-Healey</a></td>
-        </tr>
-        <tr>
-            <td><img src="Save_the_cat_Novel.jpg" alt="Product_image" height=100 width=100></td>
-            <td>Save_the_cat_Novel</td>
-            <td>Description</td>
-            <td>£15.99</td>
-            <td><a href="URL">https://www.amazon.co.uk/Save-Cat-Writes-Novel-Writing</a></td>
-                
-        </tr>
-        <tr>
-            <td><img src="Sapiens Graphic Novel.jpg" alt="Product_image" height=100 width=100></td>
-            <td>Sapiens Graphic Novel</td>
-            <td>Description</td>
-            <td>£25.99</td>
-            <td><a href="URL">https://www.amazon.co.uk/Sapiens-Graphic-Novel-Yuval-Harari</a></td>
-        </tr>
-        <tr>
-            <td><img src="The Girl at the Back of the Bus_Novel.jpg" alt="Product_image" height=100 width=100></td>
-            <td>The Girl at the Back of the Bus_Novel</td>
-            <td>Description</td>
-            <td>£3.49</td>
-            <td><a href="URL">https://www.amazon.co.uk/Girl-Back-Bus-absolutely-heart-wrenching</a></td>
-        </tr>
-      </table>
-      <div class="row-fluid">
-        <form id="new-user">
-            <input type="text" name="message" placeholder="Message" />
-            <a id="send" class="btn btn-primary">SEND</a>
-        </form>		
+    <button onclick="h1Modify()">click me</button>
+    <div>
+        <table class="table">
+            <tr id='table-heading'>
+                <th>Product_image</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td><img src="The_Best_is_yet to_Come_Novel.jpg" alt="Product_image" height=100 width=100></img></td>
+                <td>The_Best_is_yet to_Come_Novel</td>
+                <td>Description</td>
+                <td>£19.99</td>
+                <td><a href='https://www.amazon.co.uk/Best-Yet-Come-Katy-Colins'>Amazon Link</a></td>
+            </tr>
+            <tr>
+                <td><img src="The Secret Stealers_Novel.jpg" alt="Product_image" height=100 width=100></td>
+                <td>The Secret Stealers_Novel</td>
+                <td>description</td>
+                <td>£7.99</td>
+                <td><a href="https://www.amazon.co.uk/Secret-Stealers-Novel-Jane-Healey">Amazon Link</a></td>
+            </tr>
+            <tr>
+                <td><img src="Save_the_cat_Novel.jpg" alt="Product_image" height=100 width=100></td>
+                <td>Save_the_cat_Novel</td>
+                <td>Description</td>
+                <td>£15.99</td>
+                <td><a href="https://www.amazon.co.uk/Save-Cat-Writes-Novel-Writing">Amazon Link</a></td>
+                    
+            </tr>
+            <tr>
+                <td><img src="Sapiens Graphic Novel.jpg" alt="Product_image" height=100 width=100></td>
+                <td>Sapiens Graphic Novel</td>
+                <td>Description</td>
+                <td>£25.99</td>
+                <td><a href="https://www.amazon.co.uk/Sapiens-Graphic-Novel-Yuval-Harari">Amazon Link</a></td>
+            </tr>
+            <tr>
+                <td><img src="The Girl at the Back of the Bus_Novel.jpg" alt="Product_image" height=100 width=100></td>
+                <td>The Girl at the Back of the Bus_Novel</td>
+                <td>Description</td>
+                <td>£3.49</td>
+                <td><a href="https://www.amazon.co.uk/Girl-Back-Bus-absolutely-heart-wrenching">Amazon Link</a></td>
+            </tr>
+        </table>
     </div>
-      <footer>
+    <div class="row-fluid">
+            <input type="text" name="message" placeholder="Write your Suggestions" width=100/>
+            <button>Send</button>
+    </div>
+      <footer class="footer">
         <span>ShopName: Rakesh Novel Book Store </span>
         <span>Adress: Apt 12 Rosedale, Tyreconnel street, Inchicore,Dublin 08, Ireland</span>
       </footer>
